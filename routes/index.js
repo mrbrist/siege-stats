@@ -3,9 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(err, req, res, next) {
-  //res.render('index', { title: 'siege-stats' });
-  res.status(err.status || 500);
-  res.render('error');
+  res.render('index', { title: 'siege-stats' });
 });
 
 module.exports = router;
